@@ -22,7 +22,7 @@ app.get('/tshirt', (req, res) => {
     })
 })
 
-app.get('/encrypt', (req, res) => {
+app.post('/encrypt', (req, res) => {
 
     const {pubKey} = req.body;
     const {message} = req.body
