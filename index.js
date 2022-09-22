@@ -15,12 +15,6 @@ app.listen(
     () => console.log(`it is alive on http://localhost:${PORT}`)
 )
 
-app.get('/tshirt', (req, res) => {
-    res.status(200).send({
-        tshirt: 'blue',
-        size: 'large'
-    })
-})
 
 app.post('/encrypt', (req, res) => {
 
